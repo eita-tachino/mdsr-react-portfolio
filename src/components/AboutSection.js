@@ -1,5 +1,5 @@
-import React from 'react';
-import mainBcg from '../img/mainBcg.jpg';
+import React from 'react'
+import mainBcg from '../img/mainBcg.jpg'
 
 const AboutSection = () =>{
     return(
@@ -23,7 +23,7 @@ const AboutSection = () =>{
                 <img src={mainBcg} alt="mainbcg"/>
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default AboutSection;
+export default AboutSection
