@@ -14,28 +14,36 @@ const ServisesSection = () => {
                 <Cards>
                     <Card>
                         <div className="icon">
-                            <img src={FaSlack} alt="icon-01"/>
+                            <a href="#">
+                                <FaSlack/>
+                            </a>
                             <h3>Efficient</h3>
                         </div>
                         <p>Lorem ipsum dolor sit amet.</p>
                     </Card>
                     <Card>
                         <div className="icon">
-                            <img src={FaSlack} alt="icon-02"/>
+                            <a href="#">
+                                <FaSlack/>
+                            </a>
                             <h3>Team work</h3>
                         </div>
                         <p>Lorem ipsum dolor sit amet.</p>
                     </Card>
                     <Card>
                         <div className="icon">
-                            <img src={FaSlack} alt="icon-03"/>
+                            <a href="#">
+                                <FaSlack/>
+                            </a>
                             <h3>Diaphragm</h3>
                         </div>
                         <p>Lorem ipsum dolor sit amet.</p>
                     </Card>
                     <Card>
                         <div className="icon">
-                            <img src={FaSlack} alt="icon-04"/>
+                            <a href="#">
+                                <FaSlack/>
+                            </a>
                             <h3>Affordable</h3>
                         </div>
                         <p>Lorem ipsum dolor sit amet.</p>
