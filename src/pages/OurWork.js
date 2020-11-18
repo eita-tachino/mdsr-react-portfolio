@@ -5,11 +5,13 @@ import {Link} from 'react-router-dom'
 import feather from '../img/emb-Feather.jpg'
 import leaves from '../img/emb-02.jpg'
 import mesh from '../img/emb-Net.jpg'
-
+// Animations
+import {motion} from 'framer-motion'
+import {pageAnimation} from '../animation'
 
 const OurWork = () => {
     return (
-        <Work>
+        <Work exit="exit" variants={pageAnimation} initial="hidden" animate="show" style={{background: '#fff'}}>
             <Movie>
                 <h2>The Feather Works</h2>
                 <div className="line"></div>
@@ -29,7 +31,7 @@ const OurWork = () => {
     )
 }
 
-const Work = styled.div`
+const Work = styled(motion.div)`
     min-height: 100vh;
     overflow: hidden;
     padding: 5rem 10rem;
