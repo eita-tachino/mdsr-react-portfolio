@@ -8,8 +8,11 @@ import mesh from '../img/emb-Net.jpg'
 // Animations
 import {motion} from 'framer-motion'
 import {sliderContainer,slider, pageAnimation, fade, photoAnim, lineAnim} from '../animation'
+import {useScroll} from '../components/useScroll'
 
 const OurWork = () => {
+    const [element, controls] = useScroll();
+    const [element2, controls2] = useScroll();
     return (
         <Work exit="exit" variants={pageAnimation} initial="hidden" animate="show" style={{background: '#fff'}}>
             <motion.div variants={sliderContainer}>

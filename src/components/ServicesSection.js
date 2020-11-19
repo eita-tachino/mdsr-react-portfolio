@@ -5,10 +5,13 @@ import home2 from '../img/emb-06.jpg'
 // styles
 import {Wrapper, Description, Image} from '../styles'
 import styled from 'styled-components'
+import {fade} from '../animation'
+import {useScroll} from './useScroll'
 
 const ServisesSection = () => {
+    const [element, controls] = useScroll();
     return(
-        <Servises>
+        <Servises variants={fade} animate={controls} initial="hidden" ref={element}>
             <Description>
                 <h2>High <span>quality</span> servises</h2>
                 <Cards>
