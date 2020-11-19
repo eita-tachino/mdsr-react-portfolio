@@ -9,6 +9,7 @@ import mesh from '../img/emb-Net.jpg'
 import {motion} from 'framer-motion'
 import {sliderContainer,slider, pageAnimation, fade, photoAnim, lineAnim} from '../animation'
 import {useScroll} from '../components/useScroll'
+import ScrollTop from '../components/ScrollTop'
 
 const OurWork = () => {
     const [element, controls] = useScroll();
@@ -40,6 +41,7 @@ const OurWork = () => {
                 <motion.div variants={lineAnim} className="line"></motion.div>
                 <Link to="/work/the-mesh"><img src={mesh} alt="mesh"/></Link>
             </Movie>
+            <ScrollTop/>
         </Work>
     )
 }
