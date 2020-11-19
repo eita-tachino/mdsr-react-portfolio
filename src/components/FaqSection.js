@@ -1,19 +1,24 @@
 import React from 'react'
 import styled from 'styled-components'
 import {Wrapper} from '../styles'
+import Toggle from './Toggle'
 
 const FaqSection = () =>{
     return(
         <Faq>
             <h2>Any Questios<span>FAQ</span></h2>
+            <Toggle>
             <div className="question">
                 <h4>How Do I Start?</h4>
                 <div className="answer">
                     <p>Lorem ipsum dolor sit amet.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, facilis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                       Ducimus, facilis.
+                    </p>
                 </div>
                 <div className="faq-line"></div>
             </div>
+            </Toggle>
             <div className="question">
                 <h4>Daily Schedule</h4>
                 <div className="answer">
