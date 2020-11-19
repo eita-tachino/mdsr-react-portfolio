@@ -30,14 +30,14 @@ const OurWork = () => {
                     </Hide>
                 </Link>
             </Movie>
-            <Movie>
+            <Movie ref={element} variants={fade} animate={controls} initial="hidden">
                 <h2>The Leaves Works</h2>
-                <div className="line"></div>
+                <motion.div variants={lineAnim} className="line"></motion.div>
                 <Link to="/work/the-leaves"><img src={leaves} alt="leaves"/></Link>
             </Movie>
-            <Movie>
+            <Movie ref={element2} variants={fade} animate={controls2} initial="hidden">
                 <h2>The Mesh Works</h2>
-                <div className="line"></div>
+                <motion.div variants={lineAnim} className="line"></motion.div>
                 <Link to="/work/the-mesh"><img src={mesh} alt="mesh"/></Link>
             </Movie>
         </Work>
@@ -52,7 +52,7 @@ const Work = styled(motion.div)`
         padding: 1rem 0rem;
     }
 `
-const Movie = styled.div`
+const Movie = styled(motion.div)`
     padding-bottom: 10rem;
     .line{
         height: 0.5rem;
